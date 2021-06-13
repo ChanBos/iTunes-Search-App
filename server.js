@@ -30,12 +30,12 @@ app.use(cors());
 app.use(helmet());
 
 // Enabling the api app to use the routes index.js file.
-app.use("/", routes);
+app.use("/search", routes);
 
 // Checking if the process is production mode and set for the index.html file from the build folder to be utilized, instead of the public folder.
 const path = require("path");
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("./client/build"));
+  app.use(express.static("client/build"));
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });

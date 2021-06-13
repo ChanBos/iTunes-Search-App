@@ -5,7 +5,7 @@ const router = express.Router();
 // Requiring controllers from the controllers folder's index.js.
 const { getController } = require("../controllers/index.js");
 
-router.get("/search", getController);
+router.get("/", getController);
 
 // Exporting controllers to server.js.
 module.exports = router;
