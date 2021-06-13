@@ -26,9 +26,9 @@ app.use(express.json());
 app.use(morgan("start"));
 app.use(cors());
 
-// Enabling app to use Helmet to secure the code.
+// Enabling app to use Helmet to secure the code. Disabled the `contentSecurityPolicy` middleware (keeps the rest) due to inline script errors.
 app.use(helmet({
-  contentSecurityPolicy: true,
+  contentSecurityPolicy: false,
 }));
 
 // Enabling the api app to use the routes index.js file.
