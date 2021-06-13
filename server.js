@@ -27,7 +27,7 @@ app.use(morgan("start"));
 app.use(cors());
 
 // Enabling app to use Helmet to secure the code.
-app.use(helmet.frameguard());
+app.use(helmet());
 
 // Enabling the api app to use the routes index.js file.
 app.use("/search", routes);
