@@ -28,7 +28,7 @@ app.use(cors());
 
 // Enabling app to use Helmet to secure the code.
 app.use(helmet({
-  contentSecurityPolicy: false,
+  contentSecurityPolicy: true,
 }));
 
 // Enabling the api app to use the routes index.js file.
