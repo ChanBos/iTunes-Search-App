@@ -12,7 +12,9 @@ This is a full-stack web application, created with React and Express, that inter
 
 A user can enter a search term and also select the type of media they wish to search for. In addition to this, the user can create a list of their favourite content and remove items at free will. 
 
-### 🏠 [Deployed Application](http://localhost:3000)
+### 🏠 [Deployed Application](https://itunes-search-app-heroku.herokuapp.com/)
+
+![iTunes Search App](https://github.com/ChanBos/iTunes-Search-App/blob/master/client/public/images/iTunes%20Search%20App.jpg)
 
 ## Table of Contents:
 
